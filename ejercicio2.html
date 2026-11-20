@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepción</title>
+</head>
+
+<body>
+    <form>
+        <label for="Nombreyapellidos">Nombre y Apellidos</label>
+        <input type="text" minlength="3" autofocus name="Nombre">
+        <label for="Correo">Correo</label>
+        <input type="email" placeholder="porejemplo@gmail.com" required name="Correo">
+        <label for="Telefono">Número de telefono</label>
+        <input type="number" name="Número de telefono">
+        <label for="Edad">Edad</label>
+        <input type="number" min="18" max="100" name="Edad">
+        <label for="tipohab">Tipo habitación</label>
+        <select id="tipohab" name="Tipo de habitación">
+            <option value="Individual">Individual</option>
+            <option value="Doble">Doble</option>
+            <option value="Familiar">Familiar</option>
+        </select>
+        <label for="fechareserva">Fecha de reserva</label>
+        <input type="date" name="Fecha reserva">
+        <label for="Numerohuespedes">Número de huespedes</label>
+        <input type="number" min="1" max="6" name="Número huespedes">
+        <p>regimen de alojamiento</p>
+        <label id="desayuno">Desayuno incluido</label>
+        <input type="radio" name="alojamiento" id="desayuno" value="Desayuno incluido">
+        <label id="Alojamiento">Solo alojamiento</label>
+        <input type="radio" name="alojamiento" id="Alojamiento" value="Solo alojamiento" checked>
+        <label id="Media">Media pensión</label>
+        <input type="radio" name="alojamiento" id="Media" value="Media pensión">
+
+        <label id="Casillas">Casillas de verificación</label>
+        <input type="checkbox">
+        aparcamiento cuna servicio lavanderia y guia
+        <p>
+        <label id="Codigoreserva">Código de reserva</label>
+            <input type="text" name="Codigoreserva" value="CR2026" readonly>
+        <label id="Descuento">Descuento promocional</label>
+        <input type="text" name="Descuento promocional" disabled value="No disponible">
+        <label id="Observaciones">Observaciones</label>
+        <textarea id="Observaciones" rows="10" name="Observaciones">   
+        <button type="submit">Reservar</button>
+        </p>
+
+    </form>
+</body>
+
+</html>
