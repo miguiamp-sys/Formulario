@@ -5,29 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recepción</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
     <form>
-        <label for="Nombreyapellidos">Nombre y Apellidos</label>
+        <!--<label for="Nombreyapellidos">Nombre y Apellidos</label>
         <input type="text" minlength="3" autofocus name="Nombre">
         <label for="Correo">Correo</label>
-        <input type="email" placeholder="porejemplo@gmail.com" required name="Correo">
-        <label for="Telefono">Número de telefono</label>
-        <input type="number" name="Número de telefono">
-        <label for="Edad">Edad</label>
-        <input type="number" min="18" max="100" name="Edad">
-        <label for="tipohab">Tipo habitación</label>
+        <input type="email" placeholder="porejemplo@gmail.com" required name="Correo">-->
+        <div class="fila">
+            <div class="Correo">
+                <label for="Nombre">Nombre y apellido:</label>
+                <input type="text" id="Nombre">
+            </div>
+            <div class="Correo">
+                <label for="Correo">Correo:</label>
+                <input type="email" placeholder="porejemplo@gmail.com" required id="Correo" name="Correo">
+            </div>
+        </div>
+
+        <div class="fila">
+            <div>
+                <label for="Telefono">Número de telefono</label>
+                <input type="number" name="Número de telefono">
+            </div>
+            <div>
+            <label for="Edad">Edad</label>
+            <input type="number" min="18" max="100" name="Edad"></div>
+        </div>
+        <!--<label for="tipohab">Tipo habitación</label>
         <select id="tipohab" name="Tipo de habitación">
             <option value="Individual">Individual</option>
             <option value="Doble">Doble</option>
             <option value="Familiar">Familiar</option>
-        </select>
+        </select> 
+        <label for="Numerohuespedes">Número de huespedes</label>
+        <input type="number" min="1" max="6" name="Número huespedes">-->
+
+        <div class="fila">
+            <div>
+            <label for="tipohab">Tipo de habitación</label>
+            <select id="tipohab" name="Tipo de habitación">
+                <option value="Individual">Individual</option>
+                <option value="Doble">Doble</option>
+                <option value="Familiar">Familiar</option>
+            </select></div>
+            <div><label for="Numerohuespedes">Número de huespedes</label>
+            <input type="number" min="1" max="6" name="Número huespedes"></div>
+            
+        </div>
         <label for="fechareserva">Fecha de reserva</label>
         <input type="date" name="Fecha reserva">
-        <label for="Numerohuespedes">Número de huespedes</label>
-        <input type="number" min="1" max="6" name="Número huespedes">
-        <p>regimen de alojamiento</p>
+        <p>Régimen de alojamiento</p>
         <label id="desayuno">Desayuno incluido</label>
         <input type="radio" name="alojamiento" id="desayuno" value="Desayuno incluido">
         <label id="Alojamiento">Solo alojamiento</label>
@@ -38,15 +68,21 @@
         <label id="Casillas">Casillas de verificación</label>
         <input type="checkbox">
         aparcamiento cuna servicio lavanderia y guia
-        <p>
-        <label id="Codigoreserva">Código de reserva</label>
-            <input type="text" name="Codigoreserva" value="CR2026" readonly>
-        <label id="Descuento">Descuento promocional</label>
-        <input type="text" name="Descuento promocional" disabled value="No disponible">
-        <label id="Observaciones">Observaciones</label>
-        <textarea id="Observaciones" rows="10" name="Observaciones">   
-        <button type="submit">Reservar</button>
-        </p>
+        <p><div class="fila">
+            <div><label id="Codigoreserva">Código de reserva</label>
+            <input type="text" name="Codigoreserva" value="CR2026" readonly></div>
+            <div><label id="Descuento">Descuento promocional</label>
+            <input type="text" name="Descuento promocional" disabled value="No disponible"></div>
+            
+        </div>
+        <fieldset>
+            <legend>Esto son unas observaciones</legend>
+            <label id="Observaciones">Observaciones</label>
+            <textarea id="Observaciones" rows="10" name="Observaciones"></textarea></fieldset>
+        <button class="boton-enviar" type="submit">Reservar</button>
+        <button class="boton-reset" type="reset">Borrar</button></p>
+        
+        
 
     </form>
 </body>
