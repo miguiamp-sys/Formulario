@@ -102,3 +102,14 @@ button {
     color: white;
 }
 .boton-reset:hover {background-color: red;}
+[popover] {
+    width: 400px;
+    padding: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+[popover]::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
